@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Meta-Analysis Academy//Black November 2026 Revelacao//PT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:live-revelacao-black-november-2026-br@metaanalysisacademy.com
+DTSTAMP:20261027T120000Z
+DTSTART:20261029T230000Z
+DTEND:20261030T000000Z
+SUMMARY:Live de revelação: Black November do Meta-Analysis Academy
+DESCRIPTION:A oferta de Black November para entrar no Meta-Analysis Academy
+ \, revelada ao vivo pelo Dr. Rhanderson Cardoso.\n\nSorteio de um iPad par
+ a quem estiver ao vivo.\n\nO link da live é enviado no grupo da oferta no
+  WhatsApp.\nNão mandamos link da oferta no privado antes da live.
+LOCATION:Link enviado no grupo da oferta no WhatsApp
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT1H
+DESCRIPTION:Falta 1 hora para a live de revelação da Black November
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT10M
+DESCRIPTION:A live de revelação da Black November começa em 10 minutos
+END:VALARM
+END:VEVENT
+END:VCALENDAR
