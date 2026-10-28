@@ -2,9 +2,9 @@
 <html lang="pt-BR"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Live de revelação na sua agenda</title>
-<meta name="description" content="Quinta, 29/10, às 20h (horário de Brasília). Adicione a live de revelação da Black November do Meta-Analysis Academy ao seu calendário.">
+<meta name="description" content="Quinta, 29/10, às 20h (horário de Brasília). Sorteio de um iPad + bônus exclusivos para os primeiros inscritos.">
 <meta property="og:title" content="Coloque a live de revelação na sua agenda">
-<meta property="og:description" content="Quinta, 29/10, às 20h (horário de Brasília). Toque e escolha o seu calendário.">
+<meta property="og:description" content="Quinta, 29/10, às 20h (horário de Brasília). Sorteio de um iPad + bônus exclusivos para os primeiros inscritos.">
 <meta name="robots" content="noindex">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Ruda:wght@400;700;900&display=swap" rel="stylesheet">
@@ -41,21 +41,39 @@ h1{font-size:clamp(34px,10vw,46px);line-height:1.02;font-weight:900;letter-spaci
 .perks{width:100%;border-top:1px solid rgba(207,239,245,.25);padding-top:18px;display:flex;flex-direction:column;gap:8px;font-size:15px;line-height:1.4;color:var(--line)}
 .perks b{color:#fff}
 .perks a{color:var(--cyan);font-weight:900}
+.hsub{font-size:clamp(18px,5.2vw,21px);line-height:1.3;font-weight:900;color:var(--cyan);text-wrap:balance;margin-top:-8px}
+.hsub i{font-style:normal;color:#fff}
+.warn{width:100%;background:#E01E2B;color:#fff;border-radius:16px;padding:14px 16px;display:flex;align-items:center;gap:12px;text-align:left;font-size:16px;line-height:1.35;font-weight:700;box-shadow:0 0 0 4px rgba(224,30,43,.25)}
+.warn b{font-weight:900}
+.warn svg{flex:none;width:30px;height:30px;fill:none;stroke:#fff;stroke-width:2.2;stroke-linecap:round;stroke-linejoin:round}
+body.hascd{padding-top:calc(env(safe-area-inset-top) + 98px)}
+.cd{position:fixed;top:0;left:0;right:0;z-index:10;background:var(--cyan);color:var(--navy);display:flex;align-items:center;justify-content:center;gap:12px;
+  padding:calc(env(safe-area-inset-top) + 9px) 16px 9px;box-shadow:0 8px 24px rgba(0,0,0,.45)}
+.cd[hidden]{display:none}
+.cdl{font-size:15px;font-weight:900;line-height:1.15;text-align:left;max-width:86px}
+.cdt{display:flex;gap:6px}
+.cdt>span{display:flex;flex-direction:column;align-items:center;min-width:48px;background:var(--navy);color:#fff;border-radius:10px;padding:6px 6px 5px}
+.cdt>span[hidden]{display:none}
+.cdt b{font-size:22px;font-weight:900;line-height:1;font-variant-numeric:tabular-nums}
+.cdt small{font-size:9px;font-weight:900;letter-spacing:.12em;text-transform:uppercase;color:var(--cyan);margin-top:4px}
+.cd.on .cdl{max-width:none;font-size:15px;text-align:center}
 </style></head>
-<body><main>
+<body class="hascd">
+<div class="cd" id="cd" role="timer"><span class="cdl">A live começa em</span><span class="cdt"><span data-u="d"><b>--</b><small>dias</small></span><span data-u="h"><b>--</b><small>horas</small></span><span data-u="m"><b>--</b><small>min</small></span><span data-u="s"><b>--</b><small>seg</small></span></span></div><main>
 <div class="top"><img src="data:image/png;base64,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" alt=""><span class="pill">Black November 2026</span></div>
 <h1>Coloque a live de revelação na sua agenda</h1>
+<p class="hsub">Sorteio de um iPad <i>+</i> bônus exclusivos para os primeiros inscritos</p>
 <div class="when"><div class="day"><b>OUT</b><span>29</span></div><div><p>Quinta, às 20h</p><small>horário de Brasília</small></div></div>
-<p class="lead">Toque no calendário que você usa no celular e confirme. Leva 10 segundos.</p>
+<div class="warn"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3 2 20h20L12 3z"/><path d="M12 10v4"/><path d="M12 17.2v.1"/></svg><p><b>Não abriremos inscrições antes da live.</b> Desconfie de qualquer mensagem que possa sugerir isso.</p></div>
 <div class="opts" id="opts">
   <a class="opt" data-os="apple" href="live-black-november.ics"><span><span class="tag">Para o seu celular</span>Calendário da Apple<small>iPhone, iPad e Mac, já com lembrete</small></span><i>+</i></a>
-  <a class="opt" data-os="google" href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=Live%20de%20revela%C3%A7%C3%A3o%3A%20Black%20November%20do%20Meta-Analysis%20Academy&dates=20261029T230000Z/20261030T000000Z&details=A%20oferta%20de%20Black%20November%20para%20entrar%20no%20Meta-Analysis%20Academy%2C%20revelada%20ao%20vivo%20pelo%20Dr.%20Rhanderson%20Cardoso.%0A%0ASorteio%20de%20um%20iPad%20para%20quem%20estiver%20ao%20vivo.%0A%0AO%20link%20da%20live%20%C3%A9%20enviado%20no%20grupo%20da%20oferta%20no%20WhatsApp.%0AN%C3%A3o%20mandamos%20link%20da%20oferta%20no%20privado%20antes%20da%20live.&location=Link%20enviado%20no%20grupo%20da%20oferta%20no%20WhatsApp&ctz=America/Sao_Paulo" target="_blank" rel="noopener"><span><span class="tag">Para o seu celular</span>Google Agenda<small>Android e Gmail</small></span><i>+</i></a>
-  <a class="opt" data-os="outlook" href="https://outlook.live.com/calendar/0/deeplink/compose?path=%2Fcalendar%2Faction%2Fcompose&rru=addevent&subject=Live%20de%20revela%C3%A7%C3%A3o%3A%20Black%20November%20do%20Meta-Analysis%20Academy&startdt=2026-10-29T20%3A00%3A00-03%3A00&enddt=2026-10-29T21%3A00%3A00-03%3A00&body=A%20oferta%20de%20Black%20November%20para%20entrar%20no%20Meta-Analysis%20Academy%2C%20revelada%20ao%20vivo%20pelo%20Dr.%20Rhanderson%20Cardoso.%0A%0ASorteio%20de%20um%20iPad%20para%20quem%20estiver%20ao%20vivo.%0A%0AO%20link%20da%20live%20%C3%A9%20enviado%20no%20grupo%20da%20oferta%20no%20WhatsApp.%0AN%C3%A3o%20mandamos%20link%20da%20oferta%20no%20privado%20antes%20da%20live.&location=Link%20enviado%20no%20grupo%20da%20oferta%20no%20WhatsApp" target="_blank" rel="noopener"><span><span class="tag">Para o seu celular</span>Outlook<small>Hotmail, Outlook.com</small></span><i>+</i></a>
-  <a class="opt" data-os="office" href="https://outlook.office.com/calendar/0/deeplink/compose?path=%2Fcalendar%2Faction%2Fcompose&rru=addevent&subject=Live%20de%20revela%C3%A7%C3%A3o%3A%20Black%20November%20do%20Meta-Analysis%20Academy&startdt=2026-10-29T20%3A00%3A00-03%3A00&enddt=2026-10-29T21%3A00%3A00-03%3A00&body=A%20oferta%20de%20Black%20November%20para%20entrar%20no%20Meta-Analysis%20Academy%2C%20revelada%20ao%20vivo%20pelo%20Dr.%20Rhanderson%20Cardoso.%0A%0ASorteio%20de%20um%20iPad%20para%20quem%20estiver%20ao%20vivo.%0A%0AO%20link%20da%20live%20%C3%A9%20enviado%20no%20grupo%20da%20oferta%20no%20WhatsApp.%0AN%C3%A3o%20mandamos%20link%20da%20oferta%20no%20privado%20antes%20da%20live.&location=Link%20enviado%20no%20grupo%20da%20oferta%20no%20WhatsApp" target="_blank" rel="noopener"><span>Outlook do trabalho<small>Microsoft 365</small></span><i>+</i></a>
+  <a class="opt" data-os="google" href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=Live%20de%20revela%C3%A7%C3%A3o%3A%20Black%20November%20do%20Meta-Analysis%20Academy&dates=20261029T230000Z/20261030T000000Z&details=A%20oferta%20de%20Black%20November%20para%20entrar%20no%20Meta-Analysis%20Academy%2C%20revelada%20ao%20vivo%20pelo%20Dr.%20Rhanderson%20Cardoso.%0A%0ASorteio%20de%20um%20iPad%20para%20quem%20estiver%20ao%20vivo.%0AB%C3%B4nus%20exclusivos%20para%20os%20primeiros%20inscritos.%0A%0AN%C3%A3o%20abriremos%20inscri%C3%A7%C3%B5es%20antes%20da%20live.%20Desconfie%20de%20qualquer%20mensagem%20que%20possa%20sugerir%20isso.%0A%0AO%20link%20da%20live%20%C3%A9%20enviado%20no%20grupo%20da%20oferta%20no%20WhatsApp.%0AN%C3%A3o%20mandamos%20link%20da%20oferta%20no%20privado%20antes%20da%20live.&location=Link%20enviado%20no%20grupo%20da%20oferta%20no%20WhatsApp&ctz=America/Sao_Paulo" target="_blank" rel="noopener"><span><span class="tag">Para o seu celular</span>Google Agenda<small>Android e Gmail</small></span><i>+</i></a>
+  <a class="opt" data-os="outlook" href="https://outlook.live.com/calendar/0/deeplink/compose?path=%2Fcalendar%2Faction%2Fcompose&rru=addevent&subject=Live%20de%20revela%C3%A7%C3%A3o%3A%20Black%20November%20do%20Meta-Analysis%20Academy&startdt=2026-10-29T20%3A00%3A00-03%3A00&enddt=2026-10-29T21%3A00%3A00-03%3A00&body=A%20oferta%20de%20Black%20November%20para%20entrar%20no%20Meta-Analysis%20Academy%2C%20revelada%20ao%20vivo%20pelo%20Dr.%20Rhanderson%20Cardoso.%0A%0ASorteio%20de%20um%20iPad%20para%20quem%20estiver%20ao%20vivo.%0AB%C3%B4nus%20exclusivos%20para%20os%20primeiros%20inscritos.%0A%0AN%C3%A3o%20abriremos%20inscri%C3%A7%C3%B5es%20antes%20da%20live.%20Desconfie%20de%20qualquer%20mensagem%20que%20possa%20sugerir%20isso.%0A%0AO%20link%20da%20live%20%C3%A9%20enviado%20no%20grupo%20da%20oferta%20no%20WhatsApp.%0AN%C3%A3o%20mandamos%20link%20da%20oferta%20no%20privado%20antes%20da%20live.&location=Link%20enviado%20no%20grupo%20da%20oferta%20no%20WhatsApp" target="_blank" rel="noopener"><span><span class="tag">Para o seu celular</span>Outlook<small>Hotmail, Outlook.com</small></span><i>+</i></a>
+  <a class="opt" data-os="office" href="https://outlook.office.com/calendar/0/deeplink/compose?path=%2Fcalendar%2Faction%2Fcompose&rru=addevent&subject=Live%20de%20revela%C3%A7%C3%A3o%3A%20Black%20November%20do%20Meta-Analysis%20Academy&startdt=2026-10-29T20%3A00%3A00-03%3A00&enddt=2026-10-29T21%3A00%3A00-03%3A00&body=A%20oferta%20de%20Black%20November%20para%20entrar%20no%20Meta-Analysis%20Academy%2C%20revelada%20ao%20vivo%20pelo%20Dr.%20Rhanderson%20Cardoso.%0A%0ASorteio%20de%20um%20iPad%20para%20quem%20estiver%20ao%20vivo.%0AB%C3%B4nus%20exclusivos%20para%20os%20primeiros%20inscritos.%0A%0AN%C3%A3o%20abriremos%20inscri%C3%A7%C3%B5es%20antes%20da%20live.%20Desconfie%20de%20qualquer%20mensagem%20que%20possa%20sugerir%20isso.%0A%0AO%20link%20da%20live%20%C3%A9%20enviado%20no%20grupo%20da%20oferta%20no%20WhatsApp.%0AN%C3%A3o%20mandamos%20link%20da%20oferta%20no%20privado%20antes%20da%20live.&location=Link%20enviado%20no%20grupo%20da%20oferta%20no%20WhatsApp" target="_blank" rel="noopener"><span>Outlook do trabalho<small>Microsoft 365</small></span><i>+</i></a>
   <a class="opt" data-os="other" href="live-black-november.ics" download><span>Outro calendário<small>baixar o arquivo do evento (.ics)</small></span><i>+</i></a>
 </div>
 <div class="perks">
-  <p><b>A oferta só é revelada ao vivo.</b> E só concorre ao sorteio do iPad quem estiver na live.</p>
+  <p><b>A oferta só é revelada ao vivo, e as inscrições abrem durante a live.</b> Só concorre ao sorteio do iPad quem estiver na live, e os bônus exclusivos são para os primeiros inscritos.</p>
   <p>O link da live chega no grupo da oferta no WhatsApp. Não mandamos link da oferta no privado antes da live.</p>
 </div>
 </main>
@@ -67,6 +85,20 @@ h1{font-size:clamp(34px,10vw,46px);line-height:1.02;font-weight:900;letter-spaci
   if (pick) {
     var el = box.querySelector('[data-os="' + pick + '"]');
     if (el) { el.classList.add('best'); box.insertBefore(el, box.firstChild); }
+  }
+  var cd = document.getElementById('cd');
+  if (cd) {
+    var t0 = Date.parse('2026-10-29T20:00:00-03:00'), t1 = t0 + 3 * 3600e3, two = function (n) { return (n < 10 ? '0' : '') + n; };
+    var tick = function () {
+      var now = Date.now(), s = Math.floor((t0 - now) / 1000);
+      if (now >= t1) { cd.hidden = true; document.body.classList.remove('hascd'); return; }
+      if (s <= 0) { cd.classList.add('on'); cd.innerHTML = '<span class="cdl">A live começou! O link está no grupo da oferta no WhatsApp.</span>'; return; }
+      var v = {d: Math.floor(s / 86400), h: Math.floor(s % 86400 / 3600), m: Math.floor(s % 3600 / 60), s: s % 60};
+      for (var u in v) { var el = cd.querySelector('[data-u="' + u + '"]'); el.firstChild.textContent = two(v[u]); }
+      cd.querySelector('[data-u="d"]').hidden = v.d === 0;
+      setTimeout(tick, 1000 - now % 1000);
+    };
+    tick();
   }
 })();
 </script>
